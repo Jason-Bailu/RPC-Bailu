@@ -1,0 +1,2 @@
+consistentHash=org.bailu.rpc.router.impl.ConsistentHashStrategy
+roundRobin=org.bailu.rpc.router.impl.RoundRobinStrategy

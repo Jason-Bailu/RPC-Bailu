@@ -1,0 +1,1 @@
+logFilter=org.bailu.rpc.filter.client.impl.ClientLogFilter

@@ -1,0 +1,2 @@
+redis=org.bailu.rpc.registry.impl.RedisRegistry
+zookeeper=org.bailu.rpc.registry.impl.ZookeeperRegistry

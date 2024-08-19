@@ -1,0 +1,282 @@
+2024-04-03 19:24:58.690 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [org.bailu.rpc.RpcProviderDemoApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.bailu.rpc.provider.ProviderPostProcessor
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:609)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:310)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.bailu.rpc.RpcProviderDemoApplication.main(RpcProviderDemoApplication.java:11)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.bailu.rpc.provider.ProviderPostProcessor
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:162)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:402)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:325)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.bailu.rpc.provider.ProviderPostProcessor] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:459)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:151)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: io/netty/channel/EventLoopGroup
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.netty.channel.EventLoopGroup
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 27 common frames omitted
+2024-04-03 19:25:11.590 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [org.bailu.rpc.RpcProvider2Application]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.bailu.rpc.provider.ProviderPostProcessor
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:609)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:310)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.bailu.rpc.RpcProvider2Application.main(RpcProvider2Application.java:11)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.bailu.rpc.provider.ProviderPostProcessor
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:162)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:402)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:325)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.bailu.rpc.provider.ProviderPostProcessor] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:459)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:151)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: io/netty/channel/EventLoopGroup
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.netty.channel.EventLoopGroup
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 27 common frames omitted
+2024-04-03 19:27:17.501 [main] ERROR org.bailu.rpc.provider.ProviderPostProcessor - failed to register service 1.0
+java.lang.NullPointerException: null
+	at org.bailu.rpc.spi.ExtensionLoader.get(ExtensionLoader.java:46)
+	at org.bailu.rpc.registry.RegistryFactory.get(RegistryFactory.java:7)
+	at org.bailu.rpc.provider.ProviderPostProcessor.postProcessBeforeInitialization(ProviderPostProcessor.java:130)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.bailu.rpc.RpcProviderDemoApplication.main(RpcProviderDemoApplication.java:11)
+2024-04-03 19:27:17.501 [main] ERROR org.bailu.rpc.provider.ProviderPostProcessor - failed to register service 1.0
+java.lang.NullPointerException: null
+	at org.bailu.rpc.spi.ExtensionLoader.get(ExtensionLoader.java:46)
+	at org.bailu.rpc.registry.RegistryFactory.get(RegistryFactory.java:7)
+	at org.bailu.rpc.provider.ProviderPostProcessor.postProcessBeforeInitialization(ProviderPostProcessor.java:130)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.bailu.rpc.RpcProviderDemoApplication.main(RpcProviderDemoApplication.java:11)
+2024-04-03 19:27:18.141 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory.getPoolConfig(LettuceConnectionConfiguration.java:188)
+
+The following method did not exist:
+
+    org.apache.commons.pool2.impl.GenericObjectPoolConfig.setMaxWait(Ljava/time/Duration;)V
+
+The calling method's class, org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory, was loaded from the following location:
+
+    jar:file:/Users/bailu/development/mavenrepository/org/springframework/boot/spring-boot-autoconfigure/2.7.11/spring-boot-autoconfigure-2.7.11.jar!/org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration$PoolBuilderFactory.class
+
+The called method's class, org.apache.commons.pool2.impl.GenericObjectPoolConfig, is available from the following locations:
+
+    jar:file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.commons.pool2.impl.GenericObjectPoolConfig: file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
+    org.apache.commons.pool2.impl.BaseObjectPoolConfig: file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory and org.apache.commons.pool2.impl.GenericObjectPoolConfig
+
+2024-04-03 19:28:12.614 [main] ERROR org.bailu.rpc.provider.ProviderPostProcessor - failed to register service 1.0
+java.lang.NullPointerException: null
+	at org.bailu.rpc.spi.ExtensionLoader.get(ExtensionLoader.java:46)
+	at org.bailu.rpc.registry.RegistryFactory.get(RegistryFactory.java:7)
+	at org.bailu.rpc.provider.ProviderPostProcessor.postProcessBeforeInitialization(ProviderPostProcessor.java:130)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.bailu.rpc.RpcProviderDemoApplication.main(RpcProviderDemoApplication.java:11)
+2024-04-03 19:28:12.615 [main] ERROR org.bailu.rpc.provider.ProviderPostProcessor - failed to register service 1.0
+java.lang.NullPointerException: null
+	at org.bailu.rpc.spi.ExtensionLoader.get(ExtensionLoader.java:46)
+	at org.bailu.rpc.registry.RegistryFactory.get(RegistryFactory.java:7)
+	at org.bailu.rpc.provider.ProviderPostProcessor.postProcessBeforeInitialization(ProviderPostProcessor.java:130)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at org.bailu.rpc.RpcProviderDemoApplication.main(RpcProviderDemoApplication.java:11)
+2024-04-03 19:28:13.084 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory.getPoolConfig(LettuceConnectionConfiguration.java:188)
+
+The following method did not exist:
+
+    org.apache.commons.pool2.impl.GenericObjectPoolConfig.setMaxWait(Ljava/time/Duration;)V
+
+The calling method's class, org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory, was loaded from the following location:
+
+    jar:file:/Users/bailu/development/mavenrepository/org/springframework/boot/spring-boot-autoconfigure/2.7.11/spring-boot-autoconfigure-2.7.11.jar!/org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration$PoolBuilderFactory.class
+
+The called method's class, org.apache.commons.pool2.impl.GenericObjectPoolConfig, is available from the following locations:
+
+    jar:file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.commons.pool2.impl.GenericObjectPoolConfig: file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
+    org.apache.commons.pool2.impl.BaseObjectPoolConfig: file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory and org.apache.commons.pool2.impl.GenericObjectPoolConfig
+
+2024-04-03 19:38:20.775 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory.getPoolConfig(LettuceConnectionConfiguration.java:188)
+
+The following method did not exist:
+
+    org.apache.commons.pool2.impl.GenericObjectPoolConfig.setMaxWait(Ljava/time/Duration;)V
+
+The calling method's class, org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory, was loaded from the following location:
+
+    jar:file:/Users/bailu/development/mavenrepository/org/springframework/boot/spring-boot-autoconfigure/2.7.11/spring-boot-autoconfigure-2.7.11.jar!/org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration$PoolBuilderFactory.class
+
+The called method's class, org.apache.commons.pool2.impl.GenericObjectPoolConfig, is available from the following locations:
+
+    jar:file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.commons.pool2.impl.GenericObjectPoolConfig: file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
+    org.apache.commons.pool2.impl.BaseObjectPoolConfig: file:/Users/bailu/development/mavenrepository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$PoolBuilderFactory and org.apache.commons.pool2.impl.GenericObjectPoolConfig
+

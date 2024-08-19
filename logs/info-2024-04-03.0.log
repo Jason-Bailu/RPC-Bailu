@@ -1,0 +1,102 @@
+2024-04-03 19:24:41.009 [main] INFO  org.bailu.rpc.RpcConsumerDemoApplication - Starting RpcConsumerDemoApplication using Java 1.8.0_392 on bailu-MacBook-Air.local with PID 47336 (/Users/bailu/Desktop/rpc/test-rpc/consumer/target/classes started by bailu in /Users/bailu/Desktop/rpc/test-rpc)
+2024-04-03 19:24:41.010 [main] INFO  org.bailu.rpc.RpcConsumerDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 19:24:41.281 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - 读取配置文件成功
+2024-04-03 19:24:41.282 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:json, valeu:org.bailu.rpc.protocol.serialization.JsonSerialization
+2024-04-03 19:24:41.282 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:hessian, valeu:org.bailu.rpc.protocol.serialization.HessianSerialization
+2024-04-03 19:24:41.283 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:consistentHash, valeu:org.bailu.rpc.router.ConsistentHashStrategy
+2024-04-03 19:24:41.283 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:roundRobin, valeu:org.bailu.rpc.router.RoundRobinStrategy
+2024-04-03 19:24:41.283 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:logFilter, valeu:org.bailu.rpc.filter.client.ClientLogFilter
+2024-04-03 19:24:41.366 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-04-03 19:24:41.370 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-04-03 19:24:41.370 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-03 19:24:41.370 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2024-04-03 19:24:41.399 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-03 19:24:41.399 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 367 ms
+2024-04-03 19:24:41.417 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - test field:testService注入成功
+2024-04-03 19:24:41.417 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - test field:test2Service注入成功
+2024-04-03 19:24:41.521 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-04-03 19:24:41.530 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-04-03 19:24:41.537 [main] INFO  org.bailu.rpc.RpcConsumerDemoApplication - Started RpcConsumerDemoApplication in 0.69 seconds (JVM running for 0.969)
+2024-04-03 19:24:58.574 [main] INFO  org.bailu.rpc.RpcProviderDemoApplication - Starting RpcProviderDemoApplication using Java 1.8.0_392 on bailu-MacBook-Air.local with PID 47340 (/Users/bailu/Desktop/rpc/test-rpc/provider-1/target/classes started by bailu in /Users/bailu/Desktop/rpc/test-rpc)
+2024-04-03 19:24:58.576 [main] INFO  org.bailu.rpc.RpcProviderDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 19:25:11.486 [main] INFO  org.bailu.rpc.RpcProvider2Application - Starting RpcProvider2Application using Java 1.8.0_392 on bailu-MacBook-Air.local with PID 47349 (/Users/bailu/Desktop/rpc/test-rpc/provider-2/target/classes started by bailu in /Users/bailu/Desktop/rpc/test-rpc)
+2024-04-03 19:25:11.487 [main] INFO  org.bailu.rpc.RpcProvider2Application - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 19:27:16.948 [main] INFO  org.bailu.rpc.RpcProviderDemoApplication - Starting RpcProviderDemoApplication using Java 1.8.0_392 on bailu-MacBook-Air.local with PID 47399 (/Users/bailu/Desktop/rpc/test-rpc/provider-1/target/classes started by bailu in /Users/bailu/Desktop/rpc/test-rpc)
+2024-04-03 19:27:16.950 [main] INFO  org.bailu.rpc.RpcProviderDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 19:27:17.232 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 19:27:17.233 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 19:27:17.247 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-03 19:27:17.324 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - 读取配置文件成功
+2024-04-03 19:27:17.325 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:json, valeu:org.bailu.rpc.protocol.serialization.JsonSerialization
+2024-04-03 19:27:17.325 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:hessian, valeu:org.bailu.rpc.protocol.serialization.HessianSerialization
+2024-04-03 19:27:17.326 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:consistentHash, valeu:org.bailu.rpc.router.ConsistentHashStrategy
+2024-04-03 19:27:17.326 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:roundRobin, valeu:org.bailu.rpc.router.RoundRobinStrategy
+2024-04-03 19:27:17.326 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:logFilter, valeu:org.bailu.rpc.filter.client.ClientLogFilter
+2024-04-03 19:27:17.328 [main] INFO  org.bailu.rpc.provider.ProviderPostProcessor - 读取配置文件成功
+2024-04-03 19:27:17.328 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:json, valeu:org.bailu.rpc.protocol.serialization.JsonSerialization
+2024-04-03 19:27:17.328 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:hessian, valeu:org.bailu.rpc.protocol.serialization.HessianSerialization
+2024-04-03 19:27:17.329 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:consistentHash, valeu:org.bailu.rpc.router.ConsistentHashStrategy
+2024-04-03 19:27:17.329 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:roundRobin, valeu:org.bailu.rpc.router.RoundRobinStrategy
+2024-04-03 19:27:17.331 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:tokenFilter, valeu:org.bailu.rpc.filter.service.ServiceTokenFilter
+2024-04-03 19:27:17.399 [Thread-2] INFO  org.bailu.rpc.provider.ProviderPostProcessor - server addr 127.0.0.1 started on port 5555
+2024-04-03 19:27:17.440 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 11111 (http)
+2024-04-03 19:27:17.443 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-11111"]
+2024-04-03 19:27:17.444 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-03 19:27:17.444 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-04-03 19:27:17.479 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-03 19:27:17.479 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 506 ms
+2024-04-03 19:27:18.123 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-04-03 19:27:18.130 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-03 19:28:12.115 [main] INFO  org.bailu.rpc.RpcProviderDemoApplication - Starting RpcProviderDemoApplication using Java 1.8.0_392 on bailu-MacBook-Air.local with PID 47407 (/Users/bailu/Desktop/rpc/test-rpc/provider-1/target/classes started by bailu in /Users/bailu/Desktop/rpc/test-rpc)
+2024-04-03 19:28:12.117 [main] INFO  org.bailu.rpc.RpcProviderDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 19:28:12.372 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 19:28:12.373 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 19:28:12.384 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-04-03 19:28:12.450 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - 读取配置文件成功
+2024-04-03 19:28:12.451 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:json, valeu:org.bailu.rpc.protocol.serialization.JsonSerialization
+2024-04-03 19:28:12.451 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:hessian, valeu:org.bailu.rpc.protocol.serialization.HessianSerialization
+2024-04-03 19:28:12.452 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:consistentHash, valeu:org.bailu.rpc.router.ConsistentHashStrategy
+2024-04-03 19:28:12.452 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:roundRobin, valeu:org.bailu.rpc.router.RoundRobinStrategy
+2024-04-03 19:28:12.452 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:logFilter, valeu:org.bailu.rpc.filter.client.ClientLogFilter
+2024-04-03 19:28:12.454 [main] INFO  org.bailu.rpc.provider.ProviderPostProcessor - 读取配置文件成功
+2024-04-03 19:28:12.454 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:json, valeu:org.bailu.rpc.protocol.serialization.JsonSerialization
+2024-04-03 19:28:12.454 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:hessian, valeu:org.bailu.rpc.protocol.serialization.HessianSerialization
+2024-04-03 19:28:12.455 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:consistentHash, valeu:org.bailu.rpc.router.ConsistentHashStrategy
+2024-04-03 19:28:12.455 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:roundRobin, valeu:org.bailu.rpc.router.RoundRobinStrategy
+2024-04-03 19:28:12.455 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:tokenFilter, valeu:org.bailu.rpc.filter.service.ServiceTokenFilter
+2024-04-03 19:28:12.513 [Thread-2] INFO  org.bailu.rpc.provider.ProviderPostProcessor - server addr 127.0.0.1 started on port 5555
+2024-04-03 19:28:12.551 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 11111 (http)
+2024-04-03 19:28:12.554 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-11111"]
+2024-04-03 19:28:12.555 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-03 19:28:12.555 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-04-03 19:28:12.595 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-03 19:28:12.596 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 459 ms
+2024-04-03 19:28:13.068 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-04-03 19:28:13.074 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-03 19:38:19.265 [main] INFO  org.bailu.rpc.RpcConsumerDemoApplication - Starting RpcConsumerDemoApplication using Java 1.8.0_392 on bailu-MacBook-Air.local with PID 47594 (/Users/bailu/Desktop/rpc/test-rpc/consumer/target/classes started by bailu in /Users/bailu/Desktop/rpc/test-rpc)
+2024-04-03 19:38:19.267 [main] INFO  org.bailu.rpc.RpcConsumerDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 19:38:19.556 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 19:38:19.557 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 19:38:19.570 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-03 19:38:19.649 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - 读取配置文件成功
+2024-04-03 19:38:19.650 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:json, valeu:org.bailu.rpc.protocol.serialization.JsonSerialization
+2024-04-03 19:38:19.650 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:hessian, valeu:org.bailu.rpc.protocol.serialization.HessianSerialization
+2024-04-03 19:38:19.651 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:consistentHash, valeu:org.bailu.rpc.router.ConsistentHashStrategy
+2024-04-03 19:38:19.651 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:roundRobin, valeu:org.bailu.rpc.router.RoundRobinStrategy
+2024-04-03 19:38:19.652 [main] INFO  org.bailu.rpc.spi.ExtensionLoader - 加载bean key:logFilter, valeu:org.bailu.rpc.filter.client.ClientLogFilter
+2024-04-03 19:38:19.749 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-04-03 19:38:19.752 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-04-03 19:38:19.752 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-03 19:38:19.752 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-04-03 19:38:19.790 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-03 19:38:19.791 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 499 ms
+2024-04-03 19:38:19.812 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - test field:testService注入成功
+2024-04-03 19:38:19.812 [main] INFO  org.bailu.rpc.filter.client.ClientLogFilter - test field:test2Service注入成功
+2024-04-03 19:38:20.761 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-04-03 19:38:20.766 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
